@@ -3,146 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <title>INNOMA.VC</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+    <style>
+      * { font-family: 'Inter', sans-serif; }
+      details summary::-webkit-details-marker { display: none; }
+    </style>
 </head>
-<body>
-    <header class="w-full flex items-center justify-between px-8 py-4 absolute top-0 left-0 z-10">
+<body class="bg-white">
+
+<input type="checkbox" id="mob-menu" class="hidden peer"/>
+
+<header class="w-full flex items-center justify-between px-5 md:px-8 py-4 absolute top-0 left-0 z-20">
   <div class="flex items-center gap-1">
-    <span class="text-white text-[18px] font-bold tracking-wide"><img src="./INNOMA.VC.svg" alt=""></span>
+    <img src="./INNOMA.VC.svg" alt="INNOMA.VC" class="h-6"/>
   </div>
-  <nav class="hidden md:flex items-center gap-8 text-[14px] text-white">
-    <a href="#" class="hover:text-[#00c896] transition-colors">Кто мы?</a>
-    <a href="#" class="hover:text-[#00c896] transition-colors">Услуги</a>
-    <a href="#" class="hover:text-[#00c896] transition-colors">Акселератор</a>
-    <a href="#" class="hover:text-[#00c896] transition-colors">Новости</a>
+  <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-[14px] text-white">
+    <a href="#about" class="hover:text-[#00c896] transition-colors">Кто мы?</a>
+    <a href="#services" class="hover:text-[#00c896] transition-colors">Услуги</a>
+    <a href="#accelerator" class="hover:text-[#00c896] transition-colors">Акселератор</a>
+    <a href="#news" class="hover:text-[#00c896] transition-colors">Новости</a>
   </nav>
-  <a href="#" class="hidden md:flex items-center justify-center px-6 py-2 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">
-    Войти
-  </a>
+  <div class="flex items-center gap-3">
+    <a href="#" class="hidden md:flex items-center justify-center px-5 py-2 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">Войти</a>
+    <label for="mob-menu" class="flex md:hidden cursor-pointer p-1">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </label>
+  </div>
 </header>
 
-<section class="relative w-full min-h-screen flex items-center overflow-hidden">
+<div class="hidden peer-checked:flex flex-col md:hidden bg-[#0a2a3a] fixed top-0 left-0 w-full z-30 px-6 pt-16 pb-6 gap-4 text-[15px] text-white">
+  <label for="mob-menu" class="absolute top-4 right-5 cursor-pointer">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+    </svg>
+  </label>
+  <a href="#about" class="py-3 border-b border-white/20">Кто мы?</a>
+  <a href="#services" class="py-3 border-b border-white/20">Услуги</a>
+  <a href="#accelerator" class="py-3 border-b border-white/20">Акселератор</a>
+  <a href="#news" class="py-3 border-b border-white/20">Новости</a>
+  <a href="#" class="py-3 text-[#00c896] font-semibold">Войти</a>
+</div>
+
+<section class="relative w-full flex items-center overflow-hidden min-h-screen">
   <div class="absolute inset-0 z-0">
     <img src="./uae-4-2048x1367 2.svg" alt="" class="w-full h-full object-cover"/>
     <div class="absolute inset-0 bg-[#0a3d3d] opacity-60"></div>
   </div>
-
-  <div class="relative z-10 px-8 md:px-16 max-w-3xl">
-    <h1 class="text-white text-[32px] md:text-[44px] font-black leading-[1.2] uppercase mb-4">
+  <div class="relative z-10 px-6 sm:px-10 md:px-16 max-w-3xl pt-24 pb-16">
+    <h1 class="text-white text-[28px] sm:text-[36px] md:text-[44px] font-black leading-[1.2] uppercase mb-4">
       ЗАПУСТИТЕ<br/>
       <span class="bg-[#00c896] text-white px-2 py-0.5 inline-block">ТЕХНОЛОГИЧЕСКИЙ IT-БИЗНЕС</span><br/>
       НА МЕЖДУНАРОДНЫХ РЫНКАХ
     </h1>
-    <p class="text-white text-[16px] md:text-[18px] mb-8 font-light">
-      Открыт набор заявок на акселератор
-    </p>
-    <a href="#" class="inline-flex items-center justify-center px-7 py-3 border-2 border-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00c896] transition-colors">
+    <p class="text-white text-[15px] md:text-[18px] mb-8 font-light">Открыт набор заявок на акселератор</p>
+    <a href="#" class="inline-flex items-center justify-center px-6 py-3 border-2 border-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00c896] transition-colors">
       Подать заявку
     </a>
   </div>
 </section>
-<section id="services" class="py-14 px-6 md:px-16 bg-white">
-  <h2 class="text-[#00a082] text-[28px] md:text-[32px] font-bold mb-12">Наши услуги</h2>
 
-  <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
-    <div class="flex-1">
-      <h3 class="text-[#00a082] text-[18px] font-bold mb-4">Аналитические исследования</h3>
-      <p class="text-[14px] text-[#444] leading-relaxed mb-6">
-        Одним из наших ключевых направлений является анализ технологических трендов на международных рынках. Мы проводим анализ на основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY, Crunchbase, Dealroom, F6S, PitchBook а также агрегируем и анализируем данные из открытых международных источников патенты, медиа, научные публикации
-      </p>
-      <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">
-        Узнать подробнее
-      </a>
+<section id="services" class="py-10 md:py-14 px-5 sm:px-8 md:px-16 bg-white">
+  <h2 class="text-[#00a082] text-[22px] md:text-[32px] font-bold mb-8 md:mb-12">Наши услуги</h2>
+  <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-10 md:mb-16">
+    <div class="flex-1 order-2 md:order-1">
+      <h3 class="text-[#00a082] text-[17px] font-bold mb-3">Аналитические исследования</h3>
+      <p class="text-[14px] text-[#444] leading-relaxed mb-5">Одним из наших ключевых направлений является анализ технологических трендов на международных рынках. Мы проводим анализ на основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY, Crunchbase, Dealroom, F6S, PitchBook а также агрегируем и анализируем данные из открытых международных источников патенты, медиа, научные публикации</p>
+      <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">Узнать подробнее</a>
     </div>
-    <div class="flex-shrink-0 w-full md:w-[320px] flex items-center justify-center">
-      <img src="./kisspng-competitor-analysis-market-research-marketing-quan-5b102810d85456 1.svg" alt="" class="w-full max-w-[280px] h-auto object-contain"/>
+    <div class="w-full md:w-[320px] flex items-center justify-center order-1 md:order-2">
+      <img src="./kisspng-competitor-analysis-market-research-marketing-quan-5b102810d85456 1.svg" alt="" class="w-full max-w-[240px] md:max-w-[280px] h-auto object-contain"/>
     </div>
   </div>
-
-  <div class="flex flex-col-reverse md:flex-row items-center gap-8">
-    <div class="flex-shrink-0 w-full md:w-[320px] flex items-center justify-center">
-      <img src="./rocket 1.svg" alt="" class="w-full max-w-[280px] h-auto object-contain"/>
+  <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+    <div class="w-full md:w-[320px] flex items-center justify-center">
+      <img src="./rocket 1.svg" alt="" class="w-full max-w-[240px] md:max-w-[280px] h-auto object-contain"/>
     </div>
     <div class="flex-1">
-      <h3 class="text-[#00a082] text-[18px] font-bold mb-4">Онлайн акселератор для IT бизнеса</h3>
-      <p class="text-[14px] text-[#444] leading-relaxed mb-6">
-        Онлайн программа акселерации IT бизнеса позволит вашей команде открыть новые горизонты и возможности для бизнеса на глобальных рынках. В результате программы вы получите возможность презентовать свой проект для международных инвесторов и локальных партнеров
-      </p>
-      <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">
-        Узнать подробнее
-      </a>
+      <h3 class="text-[#00a082] text-[17px] font-bold mb-3">Онлайн акселератор для IT бизнеса</h3>
+      <p class="text-[14px] text-[#444] leading-relaxed mb-5">Онлайн программа акселерации IT бизнеса позволит вашей команде открыть новые горизонты и возможности для бизнеса на глобальных рынках. В результате программы вы получите возможность презентовать свой проект для международных инвесторов и локальных партнеров</p>
+      <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">Узнать подробнее</a>
     </div>
   </div>
 </section>
 
-<section class="py-14 px-6 md:px-16 bg-white">
-  <h2 class="text-[#00a082] text-[28px] md:text-[32px] font-bold mb-10">Для кого мы?</h2>
-
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-    <div class="border border-gray-200 rounded p-6">
-      <p class="text-[#00c896] text-[42px] font-black mb-3">01</p>
-      <h3 class="text-[15px] font-bold text-[#222] mb-2">IT проекты на стадии идеи</h3>
+<section class="py-10 md:py-14 px-5 sm:px-8 md:px-16 bg-white">
+  <h2 class="text-[#00a082] text-[22px] md:text-[32px] font-bold mb-6 md:mb-10">Для кого мы?</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div class="border border-gray-200 rounded p-5">
+      <p class="text-[#00c896] text-[38px] font-black mb-2">01</p>
+      <h3 class="text-[14px] font-bold text-[#222] mb-2">IT проекты на стадии идеи</h3>
       <p class="text-[13px] text-[#555] leading-relaxed">Для стартапов, которые планируют привлечь международные инвестиции, протестировать спрос и запустить продукт</p>
     </div>
-    <div class="border border-gray-200 rounded p-6">
-      <p class="text-[#00c896] text-[42px] font-black mb-3">02</p>
-      <h3 class="text-[15px] font-bold text-[#222] mb-2">Инновационный бизнес</h3>
+    <div class="border border-gray-200 rounded p-5">
+      <p class="text-[#00c896] text-[38px] font-black mb-2">02</p>
+      <h3 class="text-[14px] font-bold text-[#222] mb-2">Инновационный бизнес</h3>
       <p class="text-[13px] text-[#555] leading-relaxed">Для уже работающего технологического бизнеса, позволим найти новые международные рынки сбыта, масштабировать бизнес</p>
     </div>
-    <div class="border border-gray-200 rounded p-6">
-      <p class="text-[#00c896] text-[42px] font-black mb-3">03</p>
-      <h3 class="text-[15px] font-bold text-[#222] mb-2">Корпорации</h3>
+    <div class="border border-gray-200 rounded p-5">
+      <p class="text-[#00c896] text-[38px] font-black mb-2">03</p>
+      <h3 class="text-[14px] font-bold text-[#222] mb-2">Корпорации</h3>
       <p class="text-[13px] text-[#555] leading-relaxed">Для уже работающего технологического бизнеса, позволим найти новые международные рынки сбыта, масштабировать бизнес</p>
     </div>
   </div>
 </section>
-<section class="relative w-full flex items-center justify-center py-16 px-6 overflow-hidden" style="min-height:260px;">
+
+<section class="relative w-full flex items-center justify-center py-12 md:py-16 px-5 overflow-hidden" style="min-height:240px;">
   <div class="absolute inset-0 z-0">
     <img src="./Group 757.svg" alt="" class="w-full h-full object-cover"/>
     <div class="absolute inset-0 bg-[#0a2a3a] opacity-70"></div>
   </div>
   <div class="relative z-10 text-center max-w-3xl">
-    <h2 class="text-white text-[20px] md:text-[26px] font-black uppercase leading-snug mb-4">
+    <h2 class="text-white text-[18px] sm:text-[22px] md:text-[26px] font-black uppercase leading-snug mb-4">
       <span class="bg-[#00c896] px-2 py-0.5 inline">НАУЧИТЕСЬ ИССЛЕДОВАТЬ ИНОСТРАННЫЕ РЫНКИ</span><br/>
       <span class="bg-[#00c896] px-2 py-0.5 inline mt-1">И ОТКРОЙТЕ НОВЫЕ ВОЗМОЖНОСТИ ДЛЯ СВОЕГО БИЗНЕСА</span>
     </h2>
-    <p class="text-white text-[14px] mb-7 font-light">
-      Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и Африки
-    </p>
-    <a href="#" class="inline-flex items-center justify-center px-7 py-2.5 bg-[#2196f3] text-white text-[14px] font-semibold rounded hover:bg-[#1976d2] transition-colors">
-      Получить консультацию
-    </a>
+    <p class="text-white text-[13px] md:text-[14px] mb-6 font-light">Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и Африки</p>
+    <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#2196f3] text-white text-[14px] font-semibold rounded hover:bg-[#1976d2] transition-colors">Получить консультацию</a>
   </div>
 </section>
 
-<section class="bg-white py-12 px-6 md:px-16" style="margin-left: 150px;">
-  <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-7">С какими рынками мы работаем?</h2>
-
-  <div class="flex flex-wrap gap-0 mb-8 border border-gray-200 w-full max-w-2xl">
+<section class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
+  <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-6">С какими рынками мы работаем?</h2>
+  <div class="flex flex-wrap gap-0 mb-6 border border-gray-200 w-full max-w-2xl">
     <input type="radio" name="market" id="tab1" class="hidden" checked/>
     <input type="radio" name="market" id="tab2" class="hidden"/>
     <input type="radio" name="market" id="tab3" class="hidden"/>
     <input type="radio" name="market" id="tab4" class="hidden"/>
-
-    <label for="tab1" class="flex-1 text-center py-2.5 text-[13px] font-medium cursor-pointer border-r border-gray-200 bg-[#2196f3] text-white">Ближний восток</label>
-    <label for="tab2" class="flex-1 text-center py-2.5 text-[13px] font-medium cursor-pointer border-r border-gray-200 text-[#555] hover:bg-gray-50">Азия</label>
-    <label for="tab3" class="flex-1 text-center py-2.5 text-[13px] font-medium cursor-pointer border-r border-gray-200 text-[#555] hover:bg-gray-50">Латинская Америка</label>
-    <label for="tab4" class="flex-1 text-center py-2.5 text-[13px] font-medium cursor-pointer text-[#555] hover:bg-gray-50">Африка</label>
+    <label for="tab1" class="flex-1 text-center py-2.5 text-[12px] md:text-[13px] font-medium cursor-pointer border-r border-gray-200 bg-[#2196f3] text-white">Ближний восток</label>
+    <label for="tab2" class="flex-1 text-center py-2.5 text-[12px] md:text-[13px] font-medium cursor-pointer border-r border-gray-200 text-[#555] hover:bg-gray-50">Азия</label>
+    <label for="tab3" class="flex-1 text-center py-2.5 text-[12px] md:text-[13px] font-medium cursor-pointer border-r border-gray-200 text-[#555] hover:bg-gray-50">Латинская Америка</label>
+    <label for="tab4" class="flex-1 text-center py-2.5 text-[12px] md:text-[13px] font-medium cursor-pointer text-[#555] hover:bg-gray-50">Африка</label>
   </div>
-
   <div class="flex flex-col md:flex-row gap-6 max-w-4xl">
-    <div class="md:w-[280px] flex-shrink-0">
-      <p class="text-[15px] font-black text-[#222] uppercase mb-1">ЧЕМ ИНТЕРЕСЕН</p>
-      <p class="text-[#00c896] text-[18px] font-black uppercase mb-3">РЫНОК MENA:</p>
-      <p class="text-[13px] text-[#555] leading-relaxed mb-5">
-        ОАЭ, Саудовская Аравия, Израиль, Оман, Бахрейн, Катар, Тунис, Йемен, Египет, Алжир
-      </p>
-      <a href="#" class="inline-flex items-center justify-center px-5 py-2 bg-[#2196f3] text-white text-[13px] font-semibold rounded hover:bg-[#1976d2] transition-colors mb-5">
-        Выйти на рынок
-      </a>
+    <div class="md:w-[260px] flex-shrink-0">
+      <p class="text-[14px] font-black text-[#222] uppercase mb-1">ЧЕМ ИНТЕРЕСЕН</p>
+      <p class="text-[#00c896] text-[17px] font-black uppercase mb-3">РЫНОК MENA:</p>
+      <p class="text-[13px] text-[#555] leading-relaxed mb-5">ОАЭ, Саудовская Аравия, Израиль, Оман, Бахрейн, Катар, Тунис, Йемен, Египет, Алжир</p>
+      <a href="#" class="inline-flex items-center justify-center px-5 py-2 bg-[#2196f3] text-white text-[13px] font-semibold rounded hover:bg-[#1976d2] transition-colors mb-5">Выйти на рынок</a>
       <div class="flex items-center gap-3 mt-2">
         <div class="w-[36px] h-[36px] rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
           <img src="./Ellipse 527.svg" alt="" class="w-full h-full object-cover"/>
@@ -153,328 +154,272 @@
         </div>
       </div>
     </div>
-
-    <div class="flex-1 grid grid-cols-2 gap-4">
-      <div class="border border-gray-200 rounded p-5 flex flex-col justify-center">
-        <p class="text-[#2196f3] text-[28px] font-black mb-1">&gt;5,5 Млрд</p>
-        <p class="text-[12px] text-[#888]">Инвестиции pre-seed, seed</p>
+    <div class="flex-1 grid grid-cols-2 gap-3 md:gap-4">
+      <div class="border border-gray-200 rounded p-4 flex flex-col justify-center">
+        <p class="text-[#2196f3] text-[22px] md:text-[28px] font-black mb-1">&gt;5,5 Млрд</p>
+        <p class="text-[11px] md:text-[12px] text-[#888]">Инвестиции pre-seed, seed</p>
       </div>
-      <div class="border border-gray-200 rounded p-5 flex flex-col justify-center">
-        <p class="text-[#2196f3] text-[28px] font-black mb-1">&gt;300</p>
-        <p class="text-[12px] text-[#888]">Акселераторов, инкубаторов</p>
+      <div class="border border-gray-200 rounded p-4 flex flex-col justify-center">
+        <p class="text-[#2196f3] text-[22px] md:text-[28px] font-black mb-1">&gt;300</p>
+        <p class="text-[11px] md:text-[12px] text-[#888]">Акселераторов, инкубаторов</p>
       </div>
-      <div class="border border-gray-200 rounded p-5 flex flex-col justify-center">
-        <p class="text-[#2196f3] text-[28px] font-black mb-1">73</p>
-        <p class="text-[12px] text-[#888]">Венчурных фонда</p>
+      <div class="border border-gray-200 rounded p-4 flex flex-col justify-center">
+        <p class="text-[#2196f3] text-[22px] md:text-[28px] font-black mb-1">73</p>
+        <p class="text-[11px] md:text-[12px] text-[#888]">Венчурных фонда</p>
       </div>
-      <div class="bg-[#2196f3] rounded p-5 flex flex-col items-center justify-center cursor-pointer hover:bg-[#1976d2] transition-colors">
-        <svg class="w-6 h-6 text-white mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <div class="bg-[#2196f3] rounded p-4 flex flex-col items-center justify-center cursor-pointer hover:bg-[#1976d2] transition-colors">
+        <svg class="w-5 h-5 text-white mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/>
         </svg>
-        <p class="text-white text-[13px] font-semibold text-center">Скачать отчет<br/>по рынку MENA</p>
+        <p class="text-white text-[12px] font-semibold text-center">Скачать отчет<br/>по рынку MENA</p>
       </div>
     </div>
   </div>
 </section>
-<section id="accelerator" class="bg-white py-12 px-6 md:px-16">
-  <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-3">Об акселераторе IT бизнеса</h2>
-  <p class="text-[13.5px] text-[#555] leading-relaxed mb-8 max-w-2xl">
-    Программа акселератора расчитана на 8 недель интенсивного онлайн курса с вебинарами приглашенных экспертов по международным рынкам, разборами ваших идей и проектов
-  </p>
 
+<section id="accelerator" class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
+  <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-3">Об акселераторе IT бизнеса</h2>
+  <p class="text-[13px] md:text-[13.5px] text-[#555] leading-relaxed mb-6 max-w-2xl">Программа акселератора расчитана на 8 недель интенсивного онлайн курса с вебинарами приглашенных экспертов по международным рынкам, разборами ваших идей и проектов</p>
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-    <div class="border border-gray-200 rounded p-6 flex flex-col items-center justify-center gap-3">
-      <span class="text-[52px] font-black text-[#2196f3]">3</span>
+    <div class="border border-gray-200 rounded p-5 flex flex-col items-center justify-center gap-3">
+      <span class="text-[48px] font-black text-[#2196f3]">3</span>
       <p class="text-[13px] text-[#444] text-center">Месяца обучения</p>
     </div>
-    <div class="border border-gray-200 rounded p-6 flex flex-col items-center justify-center gap-3">
-      <img src="./Vector.svg" alt="" class="w-[52px] h-[52px] object-contain"/>
+    <div class="border border-gray-200 rounded p-5 flex flex-col items-center justify-center gap-3">
+      <img src="./Vector.svg" alt="" class="w-[48px] h-[48px] object-contain"/>
       <p class="text-[13px] text-[#444] text-center">Приглашенные эксперты</p>
     </div>
-    <div class="border border-gray-200 rounded p-6 flex flex-col items-center justify-center gap-3">
-      <img src="./Vector (1).svg" alt="" class="w-[52px] h-[52px] object-contain"/>
+    <div class="border border-gray-200 rounded p-5 flex flex-col items-center justify-center gap-3">
+      <img src="./Vector (1).svg" alt="" class="w-[48px] h-[48px] object-contain"/>
       <p class="text-[13px] text-[#444] text-center">Персональный менеджер</p>
     </div>
   </div>
-
-  <div class="bg-black rounded w-full flex flex-col items-center justify-center gap-5 py-16 px-6" style="height: 500px; border-radius: 25px;">
-    <p class="text-white text-[15px]">Об акселерационной программе</p>
-    <button class="w-[56px] h-[56px] rounded-full bg-[#2196f3] hover:bg-[#1976d2] transition-colors flex items-center justify-center">
-      <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+  <div class="bg-black w-full flex flex-col items-center justify-center gap-5 py-14 md:py-16 px-6 rounded-2xl" style="min-height:300px;">
+    <p class="text-white text-[14px] md:text-[15px]">Об акселерационной программе</p>
+    <button class="w-[52px] h-[52px] md:w-[56px] md:h-[56px] rounded-full bg-[#2196f3] hover:bg-[#1976d2] transition-colors flex items-center justify-center">
+      <svg class="w-5 h-5 md:w-6 md:h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
         <path d="M8 5v14l11-7z"/>
       </svg>
     </button>
   </div>
 </section>
-<section class="bg-white py-12 px-6 md:px-16">
-  <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-6">Программа акселератора</h2>
 
-  <div class="flex flex-col border border-gray-200 rounded overflow-hidden mb-6">
-
+<section class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
+  <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-5">Программа акселератора</h2>
+  <div class="flex flex-col border border-gray-200 rounded overflow-hidden mb-5">
     <details open class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 1</span>
-          <span class="text-[13.5px] text-[#222]">Тенденции и тренды современного мира</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] md:text-[13.5px] font-bold whitespace-nowrap">Модуль 1</span>
+          <span class="text-[13px] md:text-[13.5px] text-[#222] truncate">Тенденции и тренды современного мира</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <div class="w-[26px] h-[26px] md:w-[28px] md:h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
           </svg>
         </div>
       </summary>
-      <div class="px-5 pb-5 flex flex-col gap-3">
+      <div class="px-4 md:px-5 pb-5 flex flex-col gap-3">
         <p class="text-[13px] text-[#444]">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
         <p class="text-[13px] text-[#444]">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
         <p class="text-[13px] text-[#444]">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
         <a href="#" class="text-[#2196f3] text-[13px] hover:underline">9 видео роликов, вебинар с приглашенным экспертом</a>
       </div>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 2</span>
-          <span class="text-[13.5px] text-[#222]">Стартап подход к созданию международного IT продукта</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 2</span>
+          <span class="text-[13px] text-[#222] truncate">Стартап подход к созданию международного IT продукта</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 3</span>
-          <span class="text-[13.5px] text-[#222]">Бизнес моделирование и поиск Product Market Fit</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 3</span>
+          <span class="text-[13px] text-[#222] truncate">Бизнес моделирование и поиск Product Market Fit</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 4</span>
-          <span class="text-[13.5px] text-[#222]">Определение рынка, поиск и исследование Целевой аудитории</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 4</span>
+          <span class="text-[13px] text-[#222] truncate">Определение рынка, поиск и исследование Целевой аудитории</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 5</span>
-          <span class="text-[13.5px] text-[#222]">Что такое MVP и почему это важно</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 5</span>
+          <span class="text-[13px] text-[#222] truncate">Что такое MVP и почему это важно</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 6</span>
-          <span class="text-[13.5px] text-[#222]">Unit экономика и финансовое моделирование</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 6</span>
+          <span class="text-[13px] text-[#222] truncate">Unit экономика и финансовое моделирование</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 7</span>
-          <span class="text-[13.5px] text-[#222]">Что такое дорожная карта продукта?</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 7</span>
+          <span class="text-[13px] text-[#222] truncate">Что такое дорожная карта продукта?</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 8</span>
-          <span class="text-[13.5px] text-[#222]">Документы дя международных инвесторов</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 8</span>
+          <span class="text-[13px] text-[#222] truncate">Документы дя международных инвесторов</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
     <details class="group border-b border-gray-200">
-      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-        <div class="flex items-center gap-2">
-          <span class="text-[#2196f3] text-[13.5px] font-bold">Модуль 8</span>
-          <span class="text-[13.5px] text-[#222]">Открытие юридического лица. Возможности для стартапов</span>
+      <summary class="flex items-center justify-between px-4 md:px-5 py-4 cursor-pointer list-none">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <span class="text-[#2196f3] text-[13px] font-bold whitespace-nowrap">Модуль 8</span>
+          <span class="text-[13px] text-[#222] truncate">Открытие юридического лица. Возможности для стартапов</span>
         </div>
-        <div class="w-[28px] h-[28px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-4">
-          <svg class="w-4 h-4 text-white group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
+        <div class="w-[26px] h-[26px] rounded-full bg-[#2196f3] flex items-center justify-center flex-shrink-0 ml-3">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </div>
       </summary>
     </details>
-
-    <div class="px-5 py-4">
+    <div class="px-4 md:px-5 py-4">
       <span class="text-[#2196f3] text-[13.5px] font-semibold">Демо день</span>
     </div>
-
   </div>
-
-  <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#2196f3] text-white text-[14px] font-semibold rounded hover:bg-[#1976d2] transition-colors">
-    Получить полную программу
-  </a>
+  <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#2196f3] text-white text-[14px] font-semibold rounded hover:bg-[#1976d2] transition-colors">Получить полную программу</a>
 </section>
-<section class="bg-[#2196f3] py-12 px-6 md:px-16 relative overflow-hidden">
-  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
 
-    <div class="flex-1 max-w-[380px]">
-      <h2 class="text-white text-[24px] md:text-[30px] font-bold leading-snug mb-4">
-        Попадите на радары<br/>инвесторов и партнеров
-      </h2>
-      <p class="text-white text-[13.5px] leading-relaxed mb-7 opacity-90">
-        В результате прохождения обучения мы создадим профили вашей компании на всех международных скаутинговых площадках
-      </p>
-      <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">
-        Записаться в акселератор
-      </a>
+<section class="bg-[#2196f3] py-10 md:py-12 px-5 sm:px-8 md:px-16 relative overflow-hidden">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
+    <div class="flex-1 w-full">
+      <h2 class="text-white text-[22px] md:text-[30px] font-bold leading-snug mb-4">Попадите на радары<br/>инвесторов и партнеров</h2>
+      <p class="text-white text-[13px] md:text-[13.5px] leading-relaxed mb-6 opacity-90">В результате прохождения обучения мы создадим профили вашей компании на всех международных скаутинговых площадках</p>
+      <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#00c896] text-white text-[14px] font-semibold rounded hover:bg-[#00b080] transition-colors">Записаться в акселератор</a>
     </div>
-
-    <div class="flex-1 grid grid-cols-2 gap-3 max-w-[420px]">
-      <div class="bg-white rounded flex items-center justify-center px-5 py-4">
-        <span class="text-[#2196f3] font-bold text-[15px]">🔖 PitchBook</span>
+    <div class="grid grid-cols-2 gap-3 w-full md:max-w-[420px]">
+      <div class="bg-white rounded flex items-center justify-center px-4 py-3 md:px-5 md:py-4">
+        <span class="text-[#2196f3] font-bold text-[13px] md:text-[15px]">🔖 PitchBook</span>
       </div>
-      <div class="bg-white rounded flex items-center justify-center px-5 py-4">
-        <span class="text-[#e05c2a] font-bold text-[15px]">crunchbase</span>
+      <div class="bg-white rounded flex items-center justify-center px-4 py-3 md:px-5 md:py-4">
+        <span class="text-[#e05c2a] font-bold text-[13px] md:text-[15px]">crunchbase</span>
       </div>
-      <div class="bg-white rounded flex items-center justify-center px-5 py-4">
-        <span class="text-[#2196f3] font-bold text-[15px]">⊞ DealRoom</span>
+      <div class="bg-white rounded flex items-center justify-center px-4 py-3 md:px-5 md:py-4">
+        <span class="text-[#2196f3] font-bold text-[13px] md:text-[15px]">⊞ DealRoom</span>
       </div>
-      <div class="bg-white rounded flex items-center justify-center px-5 py-4">
-        <span class="text-[#1a1a2e] font-bold text-[14px]">VADAR</span>
+      <div class="bg-white rounded flex items-center justify-center px-4 py-3 md:px-5 md:py-4">
+        <span class="text-[#1a1a2e] font-bold text-[13px] md:text-[14px]">VADAR</span>
       </div>
-      <div class="bg-white rounded flex items-center justify-center px-5 py-4">
-        <span class="text-white bg-[#e05c2a] font-bold text-[16px] px-3 py-1 rounded" style="border-radius: 50px;">F65</span>
+      <div class="bg-white rounded flex items-center justify-center px-4 py-3 md:px-5 md:py-4">
+        <span class="text-white bg-[#e05c2a] font-bold text-[14px] md:text-[16px] px-3 py-1 rounded-full">F65</span>
       </div>
-      <div class="bg-white rounded flex items-center justify-center px-5 py-4">
-        <span class="text-[#444] font-bold text-[14px]">✌ AngelList</span>
+      <div class="bg-white rounded flex items-center justify-center px-4 py-3 md:px-5 md:py-4">
+        <span class="text-[#444] font-bold text-[13px] md:text-[14px]">✌ AngelList</span>
       </div>
     </div>
-
   </div>
 </section>
 
-<section class="bg-white py-14 px-6 md:px-16">
+<section class="bg-white py-10 md:py-14 px-5 sm:px-8 md:px-16">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-10">Что вы получите в результате?</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      <div class="border border-gray-200 rounded p-6 flex flex-col items-center text-center">
-        <p class="text-[#2196f3] text-[42px] font-black mb-2">01</p>
+    <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-8">Что вы получите в результате?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="border border-gray-200 rounded p-5 flex flex-col items-center text-center">
+        <p class="text-[#2196f3] text-[38px] font-black mb-2">01</p>
         <h3 class="text-[14px] font-bold text-[#222] mb-2">Документы по продукту</h3>
         <p class="text-[12.5px] text-[#666] leading-relaxed">Бизнес план, отчет по анализу рынка, маркетинговый план, unit экономика, список гипотез, проект MVP</p>
       </div>
-      <div class="border border-gray-200 rounded p-6 flex flex-col items-center text-center">
-        <p class="text-[#2196f3] text-[42px] font-black mb-2">02</p>
+      <div class="border border-gray-200 rounded p-5 flex flex-col items-center text-center">
+        <p class="text-[#2196f3] text-[38px] font-black mb-2">02</p>
         <h3 class="text-[14px] font-bold text-[#222] mb-2">Обратная связь от рынка</h3>
         <p class="text-[12.5px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
       </div>
-      <div class="border border-gray-200 rounded p-6 flex flex-col items-center text-center">
-        <p class="text-[#2196f3] text-[42px] font-black mb-2">03</p>
+      <div class="border border-gray-200 rounded p-5 flex flex-col items-center text-center">
+        <p class="text-[#2196f3] text-[38px] font-black mb-2">03</p>
         <h3 class="text-[14px] font-bold text-[#222] mb-2">Продвижение продукта</h3>
         <p class="text-[12.5px] text-[#666] leading-relaxed">Продвижение продукта через аналитические системы партнеров</p>
       </div>
-      <div class="border border-gray-200 rounded p-6 flex flex-col items-center text-center">
-        <p class="text-[#2196f3] text-[42px] font-black mb-2">04</p>
+      <div class="border border-gray-200 rounded p-5 flex flex-col items-center text-center">
+        <p class="text-[#2196f3] text-[38px] font-black mb-2">04</p>
         <h3 class="text-[14px] font-bold text-[#222] mb-2">Подписка на отчеты</h3>
         <p class="text-[12.5px] text-[#666] leading-relaxed">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
       </div>
-      <div class="border border-gray-200 rounded p-6 flex flex-col items-center text-center">
-        <p class="text-[#2196f3] text-[42px] font-black mb-2">05</p>
+      <div class="border border-gray-200 rounded p-5 flex flex-col items-center text-center">
+        <p class="text-[#2196f3] text-[38px] font-black mb-2">05</p>
         <h3 class="text-[14px] font-bold text-[#222] mb-2">Подписка на отчеты</h3>
         <p class="text-[12.5px] text-[#666] leading-relaxed">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
       </div>
-      <div class="border border-gray-200 rounded p-6 flex flex-col items-center text-center">
-        <p class="text-[#2196f3] text-[42px] font-black mb-2">06</p>
+      <div class="border border-gray-200 rounded p-5 flex flex-col items-center text-center">
+        <p class="text-[#2196f3] text-[38px] font-black mb-2">06</p>
         <h3 class="text-[14px] font-bold text-[#222] mb-2">Подписка на отчеты</h3>
         <p class="text-[12.5px] text-[#666] leading-relaxed">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
       </div>
     </div>
   </div>
-</section>  
-<section class="bg-white py-12 px-6 md:px-16">
+</section>
+
+<section class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-8">Стоимость</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-
-      <div class="border border-gray-200 rounded flex flex-col p-6">
+    <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-6">Стоимость</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
+      <div class="border border-gray-200 rounded flex flex-col p-5 md:p-6">
         <div class="flex items-center justify-center mb-4">
-          <img src="./Vector (2).svg" alt="" class="w-[52px] h-[52px] object-contain"/>
+          <img src="./Vector (2).svg" alt="" class="w-[48px] h-[48px] object-contain"/>
         </div>
-        <h3 class="text-[15px] font-bold text-[#222] text-center mb-5 leading-snug">Анализ международных<br/>рынков</h3>
+        <h3 class="text-[14px] font-bold text-[#222] text-center mb-4 leading-snug">Анализ международных<br/>рынков</h3>
         <p class="text-[13px] text-[#555] font-semibold mb-3">Что входит в отчет?</p>
-        <ol class="flex flex-col gap-1.5 flex-1 mb-5">
+        <ol class="flex flex-col gap-1.5 flex-1 mb-4">
           <li class="text-[12.5px] text-[#444]">1. Анализ конкурентов</li>
           <li class="text-[12.5px] text-[#444]">2. Анализ инвесторов</li>
           <li class="text-[12.5px] text-[#444]">3. Размеры рынка (TAM,SAM,SOM)</li>
           <li class="text-[12.5px] text-[#444]">4. Анализ СМИ</li>
           <li class="text-[12.5px] text-[#444]">5. Анализ запрос в сети интернет</li>
         </ol>
-        <div class="flex flex-col gap-2 border-t border-gray-100 pt-4 mb-5">
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Готовность</span>
-            <span class="text-[#444]">7 раб. дней</span>
-          </div>
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Язык</span>
-            <span class="text-[#444]">рус. / англ.</span>
-          </div>
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Стоимость</span>
-            <span class="text-[#2196f3] font-bold">$1 000</span>
-          </div>
+        <div class="flex flex-col gap-2 border-t border-gray-100 pt-4 mb-4">
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Готовность</span><span class="text-[#444]">7 раб. дней</span></div>
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Язык</span><span class="text-[#444]">рус. / англ.</span></div>
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Стоимость</span><span class="text-[#2196f3] font-bold">$1 000</span></div>
         </div>
-        <a href="#" class="w-full flex items-center justify-center py-2.5 bg-[#2196f3] text-white text-[13.5px] font-semibold rounded hover:bg-[#1976d2] transition-colors">
-          Оставить заявку
-        </a>
+        <a href="#" class="w-full flex items-center justify-center py-2.5 bg-[#2196f3] text-white text-[13px] font-semibold rounded hover:bg-[#1976d2] transition-colors">Оставить заявку</a>
       </div>
-
-      <div class="border border-gray-200 rounded flex flex-col p-6">
+      <div class="border border-gray-200 rounded flex flex-col p-5 md:p-6">
         <div class="flex items-center justify-center mb-4">
-          <img src="./Vector (3).svg" alt="" class="w-[52px] h-[52px] object-contain"/>
+          <img src="./Vector (3).svg" alt="" class="w-[48px] h-[48px] object-contain"/>
         </div>
-        <h3 class="text-[15px] font-bold text-[#222] text-center mb-5 leading-snug">Упаковка стартапа<br/>под локальные рынки</h3>
+        <h3 class="text-[14px] font-bold text-[#222] text-center mb-4 leading-snug">Упаковка стартапа<br/>под локальные рынки</h3>
         <p class="text-[13px] text-[#555] font-semibold mb-3">Что входит в услугу?</p>
-        <ol class="flex flex-col gap-1.5 flex-1 mb-5">
+        <ol class="flex flex-col gap-1.5 flex-1 mb-4">
           <li class="text-[12.5px] text-[#444]">1. Анализ локальных рынков</li>
           <li class="text-[12.5px] text-[#444]">2. Бизнес план</li>
           <li class="text-[12.5px] text-[#444]">3. Питч презентация</li>
@@ -482,87 +427,60 @@
           <li class="text-[12.5px] text-[#444]">5. Расчет юнит экономики</li>
           <li class="text-[12.5px] text-[#444]">6. Проведение каст дева</li>
         </ol>
-        <div class="flex flex-col gap-2 border-t border-gray-100 pt-4 mb-5">
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Готовность</span>
-            <span class="text-[#444]">7 раб. дней</span>
-          </div>
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Язык</span>
-            <span class="text-[#444]">рус. / англ.</span>
-          </div>
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Стоимость</span>
-            <span class="text-[#2196f3] font-bold">$1 000</span>
-          </div>
+        <div class="flex flex-col gap-2 border-t border-gray-100 pt-4 mb-4">
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Готовность</span><span class="text-[#444]">7 раб. дней</span></div>
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Язык</span><span class="text-[#444]">рус. / англ.</span></div>
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Стоимость</span><span class="text-[#2196f3] font-bold">$1 000</span></div>
         </div>
-        <a href="#" class="w-full flex items-center justify-center py-2.5 bg-[#2196f3] text-white text-[13.5px] font-semibold rounded hover:bg-[#1976d2] transition-colors">
-          Оставить заявку
-        </a>
+        <a href="#" class="w-full flex items-center justify-center py-2.5 bg-[#2196f3] text-white text-[13px] font-semibold rounded hover:bg-[#1976d2] transition-colors">Оставить заявку</a>
       </div>
-
-      <div class="border border-gray-200 rounded flex flex-col p-6">
+      <div class="border border-gray-200 rounded flex flex-col p-5 md:p-6">
         <div class="flex items-center justify-center mb-4">
-          <img src="./Vector (4).svg" alt="" class="w-[52px] h-[52px] object-contain"/>
+          <img src="./Vector (4).svg" alt="" class="w-[48px] h-[48px] object-contain"/>
         </div>
-        <h3 class="text-[15px] font-bold text-[#222] text-center mb-5 leading-snug">Акселератор<br/>вашего бизнеса</h3>
+        <h3 class="text-[14px] font-bold text-[#222] text-center mb-4 leading-snug">Акселератор<br/>вашего бизнеса</h3>
         <p class="text-[13px] text-[#555] font-semibold mb-3">Что входит в акселератор?</p>
-        <ol class="flex flex-col gap-1.5 flex-1 mb-5">
+        <ol class="flex flex-col gap-1.5 flex-1 mb-4">
           <li class="text-[12.5px] text-[#444]">1. Онлайн доступ к курсам</li>
           <li class="text-[12.5px] text-[#444]">2. Документы для бизнеса</li>
           <li class="text-[12.5px] text-[#444]">3. Питч презентация</li>
           <li class="text-[12.5px] text-[#444]">4. Демо день</li>
           <li class="text-[12.5px] text-[#444]">5. Продвижение по результатам</li>
         </ol>
-        <div class="flex flex-col gap-2 border-t border-gray-100 pt-4 mb-5">
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Готовность</span>
-            <span class="text-[#444]">7 раб. дней</span>
-          </div>
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Язык</span>
-            <span class="text-[#444]">рус. / англ.</span>
-          </div>
-          <div class="flex justify-between text-[13px]">
-            <span class="text-[#555]">Стоимость</span>
-            <span class="text-[#2196f3] font-bold">$1 000</span>
-          </div>
+        <div class="flex flex-col gap-2 border-t border-gray-100 pt-4 mb-4">
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Готовность</span><span class="text-[#444]">7 раб. дней</span></div>
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Язык</span><span class="text-[#444]">рус. / англ.</span></div>
+          <div class="flex justify-between text-[13px]"><span class="text-[#555]">Стоимость</span><span class="text-[#2196f3] font-bold">$1 000</span></div>
         </div>
-        <a href="#" class="w-full flex items-center justify-center py-2.5 bg-[#2196f3] text-white text-[13.5px] font-semibold rounded hover:bg-[#1976d2] transition-colors">
-          Оставить заявку
-        </a>
+        <a href="#" class="w-full flex items-center justify-center py-2.5 bg-[#2196f3] text-white text-[13px] font-semibold rounded hover:bg-[#1976d2] transition-colors">Оставить заявку</a>
       </div>
-
     </div>
   </div>
 </section>
-<section id="about" class="bg-white py-12 px-6 md:px-16">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-10">Кто мы?</h2>
 
-    <div class="flex flex-col md:flex-row items-center gap-10 mb-14">
+<section id="about" class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-8">Кто мы?</h2>
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-10 mb-10 md:mb-14">
       <div class="w-full md:w-[460px] flex-shrink-0">
         <img src="./Снимок экрана 2022-11-14 в 5.45 1.svg" alt="" class="w-full h-auto object-contain rounded shadow-sm"/>
       </div>
       <div class="flex-1">
-        <p class="text-[14px] text-[#333] leading-relaxed mb-5">
+        <p class="text-[14px] text-[#333] leading-relaxed mb-4">
           <span class="text-[#2196f3] font-bold">INNOMA.VC</span> — Международное аналитическое агентство по запуску IT бизнеса на локальных рынках регионов Азии, Ближнего Востока, Латинской Америки, Африки.
         </p>
-        <p class="text-[14px] text-[#333] leading-relaxed">
-          Наша команда состоит из профессионалов своего дела и основной нашей целью является помощь IT компаниям получить необходимые знания и пакеты документов, чтобы успешно запустить свой продукт на международных рынках.
-        </p>
+        <p class="text-[14px] text-[#333] leading-relaxed">Наша команда состоит из профессионалов своего дела и основной нашей целью является помощь IT компаниям получить необходимые знания и пакеты документов, чтобы успешно запустить свой продукт на международных рынках.</p>
       </div>
     </div>
-
-    <div class="bg-[#f5f7fa] rounded flex flex-col md:flex-row items-center gap-8 p-8">
+    <div class="bg-[#f5f7fa] rounded flex flex-col md:flex-row items-center gap-6 md:gap-8 p-6 md:p-8">
       <div class="w-full md:w-[280px] flex-shrink-0 flex items-end justify-center">
         <div class="relative">
-          <div class="w-[200px] h-[200px] rounded-full bg-[#2196f3] opacity-20 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
-          <img src="./Group 841.svg" alt="" class="relative z-10 w-[220px] h-auto object-contain"/>
+          <div class="w-[160px] h-[160px] md:w-[200px] md:h-[200px] rounded-full bg-[#2196f3] opacity-20 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
+          <img src="./Group 841.svg" alt="" class="relative z-10 w-[180px] md:w-[220px] h-auto object-contain"/>
         </div>
       </div>
       <div class="flex-1">
-        <p class="text-[14px] text-[#333] leading-relaxed mb-5 italic">
+        <p class="text-[13.5px] md:text-[14px] text-[#333] leading-relaxed mb-4 italic">
           Всем привет!<br/>
           Меня зовут Роман. Последние 6 лет я являюсь частью инновационной экосистемы СНГ, прошел путь от проектного менеджера до руководителя продукта по автоматизированному скаутингу и скорингу стартапов. За 6 лет работы я увидел множество ошибок и отсутствие ориентации акселерационных программ под запросы стартапов. Все акселераторы выполнялись ради акселераторв и выполнения КПЭ.
         </p>
@@ -570,138 +488,94 @@
         <p class="text-[12.5px] text-[#888]">Основатель INNOMA.VC</p>
       </div>
     </div>
-
   </div>
 </section>
-<section class="bg-white py-8 px-6 md:px-16">
+
+<section class="bg-white py-8 px-5 sm:px-8 md:px-16">
   <div class="max-w-5xl mx-auto">
-
-    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-14">
-      <div class="rounded overflow-hidden aspect-video bg-gray-100">
-        <img src="./IMG_6197 2.svg" alt="" class="w-full h-full object-cover"/>
-      </div>
-      <div class="rounded overflow-hidden aspect-video bg-gray-100">
-        <img src="./test23444 1.svg" alt="" class="w-full h-full object-cover"/>
-      </div>
-      <div class="rounded overflow-hidden aspect-video bg-gray-100">
-        <img src="./test233 1.svg" alt="" class="w-full h-full object-cover"/>
-      </div>
-      <div class="rounded overflow-hidden aspect-video bg-gray-100">
-        <img src="./Снимок экрана 2022-09-02 в 1.56 1.svg" alt="" class="w-full h-full object-cover"/>
-      </div>
-      <div class="rounded overflow-hidden aspect-video bg-gray-100">
-        <img src="./IMG_6198 2.svg" alt="" class="w-full h-full object-cover"/>
-      </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-10 md:mb-14">
+      <div class="rounded overflow-hidden aspect-video bg-gray-100"><img src="./IMG_6197 2.svg" alt="" class="w-full h-full object-cover"/></div>
+      <div class="rounded overflow-hidden aspect-video bg-gray-100"><img src="./test23444 1.svg" alt="" class="w-full h-full object-cover"/></div>
+      <div class="rounded overflow-hidden aspect-video bg-gray-100"><img src="./test233 1.svg" alt="" class="w-full h-full object-cover"/></div>
+      <div class="rounded overflow-hidden aspect-video bg-gray-100"><img src="./Снимок экрана 2022-09-02 в 1.56 1.svg" alt="" class="w-full h-full object-cover"/></div>
+      <div class="rounded overflow-hidden aspect-video bg-gray-100 col-span-2 sm:col-span-1"><img src="./IMG_6198 2.svg" alt="" class="w-full h-full object-cover"/></div>
     </div>
-
-    <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-10">Эксперты и трекеры программы</h2>
-
+    <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-8">Эксперты и трекеры программы</h2>
     <div class="relative">
-      <button class="absolute left-0 top-[60px] -translate-x-5 w-[36px] h-[36px] rounded-full bg-[#2196f3] hover:bg-[#1976d2] flex items-center justify-center z-10 transition-colors">
-        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
-        </svg>
+      <button class="absolute left-0 top-[55px] -translate-x-3 md:-translate-x-5 w-[32px] h-[32px] md:w-[36px] md:h-[36px] rounded-full bg-[#2196f3] hover:bg-[#1976d2] flex items-center justify-center z-10 transition-colors">
+        <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
       </button>
-
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 px-4">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 px-4">
         <div class="flex flex-col items-center text-center">
-          <div class="w-[110px] h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
+          <div class="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
             <img src="./Ellipse 545.svg" alt="" class="w-full h-full object-cover"/>
           </div>
-          <p class="text-[14px] font-bold text-[#222] mb-1">Юрий Ким</p>
-          <p class="text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+          <p class="text-[13px] md:text-[14px] font-bold text-[#222] mb-1">Юрий Ким</p>
+          <p class="text-[11px] md:text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
         </div>
         <div class="flex flex-col items-center text-center">
-          <div class="w-[110px] h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
+          <div class="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
             <img src="./Ellipse 544.svg" alt="" class="w-full h-full object-cover"/>
           </div>
-          <p class="text-[14px] font-bold text-[#222] mb-1">Эшли Абрамс</p>
-          <p class="text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+          <p class="text-[13px] md:text-[14px] font-bold text-[#222] mb-1">Эшли Абрамс</p>
+          <p class="text-[11px] md:text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
         </div>
         <div class="flex flex-col items-center text-center">
-          <div class="w-[110px] h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
+          <div class="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
             <img src="./Ellipse 546.svg" alt="" class="w-full h-full object-cover"/>
           </div>
-          <p class="text-[14px] font-bold text-[#222] mb-1">Фатими Юсуф</p>
-          <p class="text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+          <p class="text-[13px] md:text-[14px] font-bold text-[#222] mb-1">Фатими Юсуф</p>
+          <p class="text-[11px] md:text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
         </div>
         <div class="flex flex-col items-center text-center">
-          <div class="w-[110px] h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
+          <div class="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-[#2196f3]">
             <img src="./Ellipse 548.svg" alt="" class="w-full h-full object-cover"/>
           </div>
-          <p class="text-[14px] font-bold text-[#222] mb-1">Майкл Донован</p>
-          <p class="text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+          <p class="text-[13px] md:text-[14px] font-bold text-[#222] mb-1">Майкл Донован</p>
+          <p class="text-[11px] md:text-[12px] text-[#666] leading-relaxed">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
         </div>
       </div>
-
-      <button class="absolute right-0 top-[60px] translate-x-5 w-[36px] h-[36px] rounded-full bg-[#2196f3] hover:bg-[#1976d2] flex items-center justify-center z-10 transition-colors">
-        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-        </svg>
+      <button class="absolute right-0 top-[55px] translate-x-3 md:translate-x-5 w-[32px] h-[32px] md:w-[36px] md:h-[36px] rounded-full bg-[#2196f3] hover:bg-[#1976d2] flex items-center justify-center z-10 transition-colors">
+        <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       </button>
     </div>
-
   </div>
 </section>
-<section class="bg-white py-12 px-6 md:px-16">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-8">Наши партнеры</h2>
 
+<section class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-6">Наши партнеры</h2>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-0 border-l border-t border-gray-200">
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./Снимок экрана 2022-09-08 в 1.50.svg" alt="crunchbase" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./Dealroom 1.svg" alt="DealRoom" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./Снимок экрана 2022-07-01 в 5.07 1.svg" alt="COOL" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./Снимок экрана 2022-07-01 в 5.09 1.svg" alt="Eurasia Development" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./Снимок экрана 2022-11-19 в 7.52.svg" alt="Dtec" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./png-clipart-in5-tech-entrepreneurship-tecom-group-startup-company-technology-others-miscellaneous-text-removebg-preview 1.svg" alt="i5" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./Снимок экрана 2022-11-19 в 7.54.svg" alt="Rakuten Ventures" class="h-[28px] object-contain"/>
-      </div>
-      <div class="flex items-center justify-center px-6 py-7 border-r border-b border-gray-200">
-        <img src="./header-logo 1.svg" alt="HUB71" class="h-[28px] object-contain"/>
-      </div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./Снимок экрана 2022-09-08 в 1.50.svg" alt="crunchbase" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./Dealroom 1.svg" alt="DealRoom" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./Снимок экрана 2022-07-01 в 5.07 1.svg" alt="" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./Снимок экрана 2022-07-01 в 5.09 1.svg" alt="" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./Снимок экрана 2022-11-19 в 7.52.svg" alt="" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./png-clipart-in5-tech-entrepreneurship-tecom-group-startup-company-technology-others-miscellaneous-text-removebg-preview 1.svg" alt="" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./Снимок экрана 2022-11-19 в 7.54.svg" alt="" class="h-[22px] md:h-[28px] object-contain"/></div>
+      <div class="flex items-center justify-center px-4 py-5 md:px-6 md:py-7 border-r border-b border-gray-200"><img src="./header-logo 1.svg" alt="HUB71" class="h-[22px] md:h-[28px] object-contain"/></div>
     </div>
   </div>
 </section>
 
-<section class="relative w-full flex items-center justify-center py-16 px-6 overflow-hidden" style="min-height:280px;">
+<section class="relative w-full flex items-center justify-center py-12 md:py-16 px-5 overflow-hidden" style="min-height:260px;">
   <div class="absolute inset-0 z-0">
     <img src="./Rectangle 1992.svg" alt="" class="w-full h-full object-cover"/>
     <div class="absolute inset-0 bg-[#0a1a2a] opacity-65"></div>
   </div>
   <div class="relative z-10 text-center max-w-2xl">
-    <h2 class="text-white text-[22px] md:text-[28px] font-bold leading-snug mb-4">
-      Мы создаем международное сообщество<br/>экспертов и партнеров
-    </h2>
-    <p class="text-white text-[14px] leading-relaxed mb-8 opacity-90">
-      Если вы или ваш бизнес может быть полезен IT командам при выходе<br/>на международные рынки, приглашаем вас стать нашим партнером
-    </p>
-    <a href="#" class="inline-flex items-center justify-center px-8 py-2.5 bg-[#2196f3] text-white text-[14px] font-semibold rounded hover:bg-[#1976d2] transition-colors">
-      Стать партнером
-    </a>
+    <h2 class="text-white text-[20px] md:text-[28px] font-bold leading-snug mb-4">Мы создаем международное сообщество<br/>экспертов и партнеров</h2>
+    <p class="text-white text-[13px] md:text-[14px] leading-relaxed mb-7 opacity-90">Если вы или ваш бизнес может быть полезен IT командам при выходе<br/>на международные рынки, приглашаем вас стать нашим партнером</p>
+    <a href="#" class="inline-flex items-center justify-center px-7 py-2.5 bg-[#2196f3] text-white text-[14px] font-semibold rounded hover:bg-[#1976d2] transition-colors">Стать партнером</a>
   </div>
 </section>
-<section id="news" class="bg-white py-12 px-6 md:px-16">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-[#00a082] text-[22px] md:text-[26px] font-bold mb-8">Мероприятия и события</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+<section id="news" class="bg-white py-10 md:py-12 px-5 sm:px-8 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-[#00a082] text-[20px] md:text-[26px] font-bold mb-6">Мероприятия и события</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
       <div class="border border-gray-200 rounded overflow-hidden">
-        <div class="h-[120px] overflow-hidden">
-          <img src="./fb033e58ef8fe65878e0970a7f276374b3baf71f.jpg" alt="" class="w-full h-full object-cover"/>
-        </div>
+        <div class="h-[120px] overflow-hidden"><img src="./fb033e58ef8fe65878e0970a7f276374b3baf71f.jpg" alt="" class="w-full h-full object-cover"/></div>
         <div class="p-4">
           <h3 class="text-[14px] font-bold text-[#222] mb-2">Новый отчет по MENA</h3>
           <p class="text-[12.5px] text-[#666] leading-relaxed mb-3">Аналитический отчет по рынкам Ближнего Востока (инвесторы, объем раундов, ТОП сферы)</p>
@@ -709,9 +583,7 @@
         </div>
       </div>
       <div class="border border-gray-200 rounded overflow-hidden">
-        <div class="h-[120px] overflow-hidden">
-          <img src="./0369c7e80d4d1003d4db5690c8c5094972ff19b0.png" alt="" class="w-full h-full object-cover"/>
-        </div>
+        <div class="h-[120px] overflow-hidden"><img src="./0369c7e80d4d1003d4db5690c8c5094972ff19b0.png" alt="" class="w-full h-full object-cover"/></div>
         <div class="p-4">
           <h3 class="text-[14px] font-bold text-[#222] mb-2">Вебинар по особенностям рынков Ближнего Востока</h3>
           <p class="text-[12.5px] text-[#666] leading-relaxed mb-3">Поговорим с экспертами рынков в формате дискуссии</p>
@@ -719,9 +591,7 @@
         </div>
       </div>
       <div class="border border-gray-200 rounded overflow-hidden">
-        <div class="h-[120px] overflow-hidden">
-          <img src="./6bb382a065ac22c424dfec65734712f68d0961a5.png" alt="" class="w-full h-full object-cover"/>
-        </div>
+        <div class="h-[120px] overflow-hidden"><img src="./6bb382a065ac22c424dfec65734712f68d0961a5.png" alt="" class="w-full h-full object-cover"/></div>
         <div class="p-4">
           <h3 class="text-[14px] font-bold text-[#222] mb-2">Вебинар по особенностям рынков Ближнего Востока</h3>
           <p class="text-[12.5px] text-[#666] leading-relaxed mb-3">Поговорим с экспертами рынков в формате дискуссии</p>
@@ -732,67 +602,59 @@
   </div>
 </section>
 
-<section class="bg-[#2196f3] py-14 px-6 md:px-16 relative overflow-hidden">
-  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
-    <div class="flex-1 max-w-[340px]">
-      <h2 class="text-white text-[24px] md:text-[28px] font-bold mb-3">Остались вопросы?</h2>
-      <p class="text-white text-[13.5px] opacity-90 mb-7">Оставьте заявку и наша команда свяжется с вами</p>
+<section class="bg-[#2196f3] py-12 md:py-14 px-5 sm:px-8 md:px-16">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-10">
+    <div class="flex-1">
+      <h2 class="text-white text-[22px] md:text-[28px] font-bold mb-3">Остались вопросы?</h2>
+      <p class="text-white text-[13px] opacity-90 mb-6">Оставьте заявку и наша команда свяжется с вами</p>
       <p class="text-white text-[14px] font-semibold mb-4">Или напишите нам:</p>
       <div class="flex items-center gap-5">
         <a href="#" class="flex items-center gap-2 text-white text-[13.5px] hover:opacity-80 transition-opacity">
           <div class="w-[36px] h-[36px] rounded-full bg-[#0088cc] flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
-            </svg>
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
           </div>
           Telegram
         </a>
         <a href="#" class="flex items-center gap-2 text-white text-[13.5px] hover:opacity-80 transition-opacity">
           <div class="w-[36px] h-[36px] rounded-full bg-[#25d366] flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           </div>
           Whatsapp
         </a>
       </div>
     </div>
-
-    <div class="w-full md:w-[420px] bg-white rounded-lg p-6 flex flex-col gap-4">
+    <div class="w-full md:w-[420px] bg-white rounded-lg p-5 md:p-6 flex flex-col gap-4">
       <input type="text" placeholder="Имя" class="w-full border-b border-gray-300 pb-2 text-[13.5px] text-[#333] outline-none placeholder-gray-400"/>
       <input type="email" placeholder="Почта" class="w-full border-b border-gray-300 pb-2 text-[13.5px] text-[#333] outline-none placeholder-gray-400"/>
       <div class="flex items-center border-b border-gray-300 pb-2 gap-2">
         <span class="text-[13px] text-[#555]">+971 🇦🇪</span>
       </div>
-      <button class="w-full bg-[#00c896] text-white text-[14px] font-semibold py-3 rounded hover:bg-[#00b080] transition-colors mt-2">
-        Оставить заявку
-      </button>
+      <button class="w-full bg-[#00c896] text-white text-[14px] font-semibold py-3 rounded hover:bg-[#00b080] transition-colors mt-1">Оставить заявку</button>
     </div>
   </div>
 </section>
 
-<footer class="bg-[#1a2940] py-8 px-6 md:px-16">
-  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start justify-between gap-8">
+<footer class="bg-[#1a2940] py-7 md:py-8 px-5 sm:px-8 md:px-16">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
     <div>
       <div class="flex items-center gap-1 mb-1">
-        <span class="text-white text-[16px] font-bold">INNOMA</span>
-        <span class="text-[#00c896] text-[16px] font-bold">.VC</span>
+        <span class="text-white text-[15px] md:text-[16px] font-bold">INNOMA</span>
+        <span class="text-[#00c896] text-[15px] md:text-[16px] font-bold">.VC</span>
       </div>
       <p class="text-gray-500 text-[12px]">Все права защищены</p>
     </div>
-
-    <nav class="flex items-center gap-6 text-[13px] text-gray-300">
+    <nav class="flex flex-wrap items-center gap-4 md:gap-6 text-[13px] text-gray-300">
       <a href="#about" class="hover:text-white transition-colors">Кто мы?</a>
       <a href="#services" class="hover:text-white transition-colors">Услуги</a>
       <a href="#accelerator" class="hover:text-white transition-colors">Акселератор</a>
       <a href="#news" class="hover:text-white transition-colors">Новости</a>
     </nav>
-
-    <div class="text-right">
+    <div class="md:text-right">
       <p class="text-gray-400 text-[12.5px] mb-1">Dubai, Single Business Tower<br/>1503, Business Bay</p>
       <a href="mailto:Sales@innoma.vc" class="text-[#2196f3] text-[12.5px] hover:underline">Sales@innoma.vc</a>
     </div>
   </div>
 </footer>
+
 </body>
 </html>
